@@ -4,10 +4,54 @@
   </div>
   <div class="card-body d-flex flex-column gap-3 p-3">
 
-    <!-- PROJECT 1 — Featured -->
-    <div class="proj-card featured" data-project="0">
+
+        <div class="proj-card featured" data-project="0">
       <div class="proj-badges">
         <span class="proj-badge-featured"><i class="fa-solid fa-star me-1"></i>Featured</span>
+        <span class="proj-badge-status">Expired</span>
+      </div>
+      <div class="proj-preview">
+        <img src="./assets/img/projects/RJE.png" alt="TPLEX Preview" class="proj-preview-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="proj-preview-placeholder">
+          <i class="fa-solid fa-display"></i><span>No preview available</span>
+        </div>
+      </div>
+      <div class="proj-meta d-flex align-items-center gap-2 mt-3 mb-2">
+        <i class="fa-regular fa-calendar proj-meta-icon"></i>
+        <span class="proj-meta-year">2025</span>
+        <span class="proj-meta-sep">•</span>
+        <i class="fa-solid fa-code proj-meta-icon"></i>
+        <span class="proj-meta-type">Capstone Project</span>
+      </div>
+      <div class="proj-title">RJE Resort Management System</div>
+      <div class="proj-subtitle">Resort Booking &amp; Reservation Management System</div>
+      <div class="proj-desc-wrapper collapsed" id="proj-desc-0">
+        <p class="proj-desc">Developed a web-based resort management system for RJE Garden Resort to streamline reservation processing, guest management, and room/cottage monitoring. The system allows staff to manage bookings, track guest check-ins and check-outs, monitor availability in real-time, and generate reports for daily operations. It improves workflow efficiency, reduces manual record-keeping, and enhances customer service management.</p>
+      </div>
+      <button class="proj-toggle-btn" onclick="toggleDesc(0)">
+        Show more <i class="fa-solid fa-chevron-down proj-toggle-icon" id="proj-icon-0"></i>
+      </button>
+      <div class="proj-tech-section mt-3">
+        <div class="proj-tech-label"><i class="fa-solid fa-code me-1"></i> Technologies</div>
+        <div class="d-flex flex-wrap gap-1 mt-2">
+          <span class="chip">PHP</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">CSS</span>
+          <span class="chip">HTML</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">CodeIgniter</span>
+        </div>
+      </div>
+      <div class="proj-actions mt-3">
+        <!-- <a href="#" class="proj-action-btn"><i class="fa-solid fa-code me-2"></i>Source Code</a>
+        <a href="#" class="proj-action-btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>Live Demo</a> -->
+      </div>
+    </div>
+
+    <!-- PROJECT  — Featured -->
+    <div class="proj-card featured" data-project="1">
+      <div class="proj-badges">
         <span class="proj-badge-status">Locally Deployed</span>
       </div>
       <div class="proj-preview">
@@ -26,11 +70,11 @@
       </div>
       <div class="proj-title">TPLEX Incident Management System</div>
       <div class="proj-subtitle">Toll Road Incident Tracking &amp; Response</div>
-      <div class="proj-desc-wrapper collapsed" id="proj-desc-0">
+      <div class="proj-desc-wrapper collapsed" id="proj-desc-1">
         <p class="proj-desc">Developed a full-featured incident management system for TPLEX (Tarlac-Pangasinan-La Union Expressway) that streamlines the reporting, tracking, and resolution of road incidents. The system enables real-time logging of accidents, breakdowns, and road hazards by field personnel, with role-based dashboards for supervisors and administrators. Features include incident status workflows, responder assignment, automated notifications, and detailed incident history for analytics and reporting.</p>
       </div>
-      <button class="proj-toggle-btn" onclick="toggleDesc(0)">
-        Show more <i class="fa-solid fa-chevron-down proj-toggle-icon" id="proj-icon-0"></i>
+      <button class="proj-toggle-btn" onclick="toggleDesc(1)">
+        Show more <i class="fa-solid fa-chevron-down proj-toggle-icon" id="proj-icon-1"></i>
       </button>
       <div class="proj-tech-section mt-3">
         <div class="proj-tech-label"><i class="fa-solid fa-code me-1"></i> Technologies</div>
@@ -48,7 +92,7 @@
     </div>
 
     <!-- PROJECT 2 -->
-    <div class="proj-card" data-project="1">
+    <div class="proj-card" data-project="2">
       <div class="proj-badges">
         <span class="proj-badge-status">Hardware</span>
       </div>
@@ -68,11 +112,11 @@
       </div>
       <div class="proj-title">Arduino Controlled Appliance Switch</div>
       <div class="proj-subtitle">IoT Home Automation via Voice &amp; App</div>
-      <div class="proj-desc-wrapper collapsed" id="proj-desc-1">
+      <div class="proj-desc-wrapper collapsed" id="proj-desc-2">
         <p class="proj-desc">Designed and built an Arduino-based home automation system that allows users to control household appliances through relay modules and a serial interface. The project demonstrates embedded systems fundamentals including digital I/O, relay logic, and real-time control — built as part of a Computer Engineering course focusing on hardware-software integration.</p>
       </div>
-      <button class="proj-toggle-btn" onclick="toggleDesc(1)">
-        Show more <i class="fa-solid fa-chevron-down proj-toggle-icon" id="proj-icon-1"></i>
+      <button class="proj-toggle-btn" onclick="toggleDesc(2)">
+        Show more <i class="fa-solid fa-chevron-down proj-toggle-icon" id="proj-icon-2"></i>
       </button>
       <div class="proj-tech-section mt-3">
         <div class="proj-tech-label"><i class="fa-solid fa-code me-1"></i> Technologies</div>
