@@ -52,20 +52,20 @@ const projects = [
     demoUrl:     "",
   },
   // ── Add a new project here ──────────────────────────────────────
-  {
-    featured:    false,
-    status:      "Live",
-    image:       "./assets/img/projects/myproject.jpg",
-    year:        "2026",
-    type:        "Personal Project",
-    typeIcon:    "fa-solid fa-code",
-    title:       "My Project Title",
-    subtitle:    "Short one-liner subtitle",
-    description: "Full project description here.",
-    tags:        ["Tag1", "Tag2"],
-    sourceUrl:   "https://github.com/yourrepo",
-    demoUrl:     "https://yoursite.com",
-  },
+//   {
+//     featured:    false,
+//     status:      "Live",
+//     image:       "./assets/img/projects/myproject.jpg",
+//     year:        "2026",
+//     type:        "Personal Project",
+//     typeIcon:    "fa-solid fa-code",
+//     title:       "My Project Title",
+//     subtitle:    "Short one-liner subtitle",
+//     description: "Full project description here.",
+//     tags:        ["Tag1", "Tag2"],
+//     sourceUrl:   "https://github.com/yourrepo",
+//     demoUrl:     "https://yoursite.com",
+//   },
 ];
 
 
