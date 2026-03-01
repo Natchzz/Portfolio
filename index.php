@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floyd Mark Ancheta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/f-logo-modern-app.svg">
+</head>
+
+<body>
+
+    <main class="container py-4">
+
+        <!-- ── TOPBAR ── -->
+        <div class="d-flex align-items-center justify-content-between w-100 py-2 mb-1">
+            <div class="d-flex align-items-center gap-3">
+                <img id="avatar" src="./assets/img/profile1.jpg" alt="Profile Photo"
+                    class="topbar-avatar rounded-2">
+                <div>
+                    <h1 class="topbar-name mb-0">Floyd Mark Ancheta</h1>
+                    <div class="topbar-location text small">
+                        <i class="fa-solid fa-location-dot me-1"></i>Pangasinan, Philippines
+                    </div>
+                    <span class="badge topbar-badge mt-1">System and Network Engineer</span>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+
+                <!-- Resume Dropdown -->
+                <div class="dropdown">
+                    <button class="btn resume-btn dropdown-toggle d-flex align-items-center gap-2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span class="d-none d-sm-inline">Resume</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end resume-menu">
+                        <li>
+                            <a class="dropdown-item resume-option d-flex align-items-center gap-2"
+                                href="./assets/Resume.pdf" target="_blank">
+                                <i class="fa-solid fa-eye resume-option-icon"></i>
+                                <div>
+                                    <div class="resume-option-label">View Resume</div>
+                                    <div class="resume-option-sub">Opens in new tab</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item resume-option d-flex align-items-center gap-2"
+                                href="./assets/Resume.pdf" download>
+                                <i class="fa-solid fa-download resume-option-icon"></i>
+                                <div>
+                                    <div class="resume-option-label">Download PDF</div>
+                                    <div class="resume-option-sub">Save to your device</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Theme Dropdown -->
+                <div class="dropdown" id="theme-dropdown-wrapper">
+                    <button class="btn theme-btn dropdown-toggle d-flex align-items-center gap-2"
+                        id="theme-btn" data-bs-toggle="dropdown" data-bs-auto-close="true"
+                        aria-expanded="false">
+                        <i id="theme-icon" class="fa-solid fa-desktop"></i>
+                        <span id="theme-label">SYSTEM</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end theme-menu" id="theme-menu">
+                        <li>
+                            <button class="dropdown-item theme-option d-flex align-items-center gap-2"
+                                data-value="light">
+                                <i class="fa-solid fa-sun theme-option-icon"></i>
+                                <div class="flex-grow-1">
+                                    <div class="theme-option-label">Light</div>
+                                    <div class="theme-option-sub">Light mode</div>
+                                </div>
+                                <i class="fa-solid fa-check theme-check"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item theme-option d-flex align-items-center gap-2"
+                                data-value="dark">
+                                <i class="fa-solid fa-moon theme-option-icon"></i>
+                                <div class="flex-grow-1">
+                                    <div class="theme-option-label">Dark</div>
+                                    <div class="theme-option-sub">Dark mode</div>
+                                </div>
+                                <i class="fa-solid fa-check theme-check"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="dropdown-item theme-option d-flex align-items-center gap-2"
+                                data-value="system">
+                                <i class="fa-solid fa-desktop theme-option-icon"></i>
+                                <div class="flex-grow-1">
+                                    <div class="theme-option-label">System</div>
+                                    <div class="theme-option-sub">Follow system</div>
+                                </div>
+                                <i class="fa-solid fa-check theme-check"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div><!-- /topbar -->
+
+        <div class="row g-3">
+
+            <!-- ── LEFT COLUMN ── -->
+            <div class="col-lg-8 d-flex flex-column gap-3">
+
+                <!-- About Me -->
+                <div class="card portfolio-card" id="about">
+                    <div class="card-header portfolio-card-header">
+                        <i class="fa-solid fa-circle-info card-icon me-2"></i>About Me
+                    </div>
+                    <div class="card-body d-flex flex-column gap-3">
+                        <p class="mb-0">Hi, I'm <strong>Floyd</strong>, a <strong>System and Network
+                                Engineer</strong> with a strong foundation in designing and managing IT and
+                            networking systems. I specialize in routing and switching, Linux and Windows server
+                            administration, virtualization with VMware and VirtualBox, and network troubleshooting
+                            using tools like Wireshark and PuTTY. I've completed projects including Raspberry
+                            Pi-based automation systems and lab simulations that optimize workflows, improve system
+                            reliability, and streamline network configurations. I focus on clean architecture,
+                            secure setups, and thorough documentation to build scalable and maintainable solutions.
+                            I am eager to apply my technical skills in collaborative, results-driven environments
+                            and contribute to real-world IT systems.</p>
+                        <div>
+                            <a href="mailto:anchetafloydmark@gmail.com" class="btn btn-email">
+                                <i class="fa-solid fa-envelope me-2"></i>Send me an Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <?php include './views/achievements.php'; ?>
+
+                <!-- Projects -->
+                <?php include './views/projects.php'; ?>
+
+                <!-- Certifications -->
+                <?php include './views/certifications.php'; ?>
+
+            </div><!-- /col-left -->
+
+            <!-- ── RIGHT COLUMN ── -->
+            <div class="col-lg-4 d-flex flex-column gap-3">
+
+                <!-- Education -->
+                <div class="card portfolio-card" id="education">
+                    <div class="card-header portfolio-card-header">
+                        <i class="fa-solid fa-graduation-cap card-icon me-2"></i>Education
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex gap-3">
+                            <div class="edu-dot-col">
+                                <div class="edu-dot"></div>
+                                <div class="edu-line"></div>
+                            </div>
+                            <div class="d-flex flex-column gap-1">
+                                <span class="edu-date">2021 – 2025</span>
+                                <div class="edu-degree">Bachelor of Science in Computer Engineering</div>
+                                <div class="edu-detail">Major in System and Network Administration</div>
+                                <div class="edu-school">Pangasinan State University</div>
+                                <div class="edu-detail">Urdaneta City, Pangasinan</div>
+                                <div class="mt-2">
+                                    <a href="https://urdaneta.psu.edu.ph/" target="_blank"
+                                        class="btn btn-visit btn-sm">
+                                        Visit PSU <i class="fa-solid fa-arrow-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technologies -->
+                <?php include './views/technologies.php'; ?>
+
+                <!-- Contact -->
+                <div class="card portfolio-card" id="contact">
+                    <div class="card-header portfolio-card-header">
+                        <i class="fa-solid fa-address-card card-icon me-2"></i>Contact
+                    </div>
+                    <div class="card-body d-flex flex-column gap-2">
+
+                        <a href="mailto:anchetafloydmark@gmail.com" class="contact-item">
+                            <div class="contact-icon-wrap"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-info">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">anchetafloydmark@gmail.com</div>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+                        </a>
+
+                        <a href="https://github.com/Natchzz" target="_blank" class="contact-item">
+                            <div class="contact-icon-wrap"><i class="fa-brands fa-github"></i></div>
+                            <div class="contact-info">
+                                <div class="contact-label">GitHub</div>
+                                <div class="contact-value">github.com/Natchzz</div>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/floydancheta/" target="_blank"
+                            class="contact-item">
+                            <div class="contact-icon-wrap"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="contact-info">
+                                <div class="contact-label">LinkedIn</div>
+                                <div class="contact-value">linkedin.com/in/floydancheta</div>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/floydmark.ancheta" target="_blank"
+                            class="contact-item contact-item-last">
+                            <div class="contact-icon-wrap"><i class="fa-brands fa-facebook-f"></i></div>
+                            <div class="contact-info">
+                                <div class="contact-label">Facebook</div>
+                                <div class="contact-value">facebook.com/floydmark.ancheta</div>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Cisco Badges -->
+                <?php include './views/badges.php'; ?>
+
+            </div><!-- /col-right -->
+
+        </div><!-- /row -->
+
+        <div class="d-flex justify-content-between align-items-center py-3">
+            <a href="#" class="footer-top small">
+                <i class="fa-solid fa-arrow-up me-1"></i>Back to top
+            </a>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/theme.js"></script>
+
+</body>
+
+</html>

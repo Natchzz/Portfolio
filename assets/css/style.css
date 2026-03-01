@@ -55,8 +55,8 @@ body {
 
 /* ── TOPBAR ── */
 .topbar-avatar {
-  width: 96px;
-  height: 96px;
+  width: 64px;
+  height: 64px;
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -518,9 +518,8 @@ body {
 .proj-toggle-icon.rotated { transform: rotate(180deg); }
 
 .proj-tech-section {
-  padding: 0 0.9rem;
+  padding: 0.75rem 0.9rem 0.9rem;
   border-top: 1px solid var(--border);
-  padding-top: 0.75rem;
 }
 
 .proj-tech-label {
