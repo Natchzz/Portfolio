@@ -11,7 +11,7 @@
 const projects = [
   {
     featured:    true,
-    status:      "Expired",
+    status:      "Locally Deployed",
     image:       "./assets/img/projects/RJE.png",
     year:        "2025",
     type:        "Capstone Project",
