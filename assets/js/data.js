@@ -94,18 +94,6 @@ const achievements = [
 
 
 /* ══════════════════════════════════
-   CERTIFICATIONS
-══════════════════════════════════ */
-const certifications = [
-//   { name: "PD 907 Civil Service Eligibility",    issuer: "Philippine Civil Service Commission · 2024" },
-//   { name: "AWS Cloud Practitioner Essentials",   issuer: "Amazon Web Services · 2023" },
-//   { name: "Responsive Web Design",               issuer: "freeCodeCamp · 2022" },
-  // ── Add a new certification here ────────────────────────────────
-  // { name: "Certification Name", issuer: "Issuing Organization · Year" },
-];
-
-
-/* ══════════════════════════════════
    TECHNOLOGIES
 ══════════════════════════════════ */
 const technologies = [
@@ -138,6 +126,22 @@ const technologies = [
 ];
 
 
+
+/* ══════════════════════════════════
+   CERTIFICATIONS
+══════════════════════════════════ */
+const certifications = [
+//   { name: "PD 907 Civil Service Eligibility",    issuer: "Philippine Civil Service Commission · 2024" },
+//   { name: "AWS Cloud Practitioner Essentials",   issuer: "Amazon Web Services · 2023" },
+//   { name: "Responsive Web Design",               issuer: "freeCodeCamp · 2022" },
+
+
+
+//   ── Add a new certification here ────────────────────────────────
+//   { name: "Certification Name", issuer: "Issuing Organization · Year" },
+
+];
+
 /* ══════════════════════════════════
    CISCO BADGES
 ══════════════════════════════════ */
@@ -153,3 +157,5 @@ const badges = [
   // ── Add a new badge here ─────────────────────────────────────────
   // { icon: "fa-solid fa-shield-halved", name: "Badge Name", date: "Mon DD, YYYY" },
 ];
+
+

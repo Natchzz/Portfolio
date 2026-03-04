@@ -108,29 +108,6 @@ function renderAchievements() {
 }
 
 
-/* ══════════════════════════════════
-   CERTIFICATIONS
-══════════════════════════════════ */
-function renderCertifications() {
-  const container = document.getElementById("slot-certifications");
-  if (!container) return;
-
-  container.innerHTML = `
-    <div class="card portfolio-card" id="certifications">
-      <div class="card-header portfolio-card-header">
-        <i class="fa-solid fa-scroll card-icon me-2"></i>Certifications
-      </div>
-      <div class="card-body d-flex flex-column gap-2">
-        ${certifications.map((c, i) => `
-          <div class="cert-item ${i < certifications.length - 1 ? "pb-2" : ""}">
-            <div class="cert-name">${c.name}</div>
-            <div class="cert-issuer">${c.issuer}</div>
-          </div>
-        `).join("")}
-      </div>
-    </div>`;
-}
-
 
 /* ══════════════════════════════════
    TECHNOLOGIES
@@ -157,6 +134,29 @@ function renderTechnologies() {
     </div>`;
 }
 
+/* ══════════════════════════════════
+   CERTIFICATIONS
+══════════════════════════════════ */
+function renderCertifications() {
+  const container = document.getElementById("slot-certifications");
+  if (!container) return;
+
+  container.innerHTML = `
+    <div class="card portfolio-card" id="certifications">
+      <div class="card-header portfolio-card-header">
+        <i class="fa-solid fa-scroll card-icon me-2"></i>Certifications
+      </div>
+      <div class="card-body d-flex flex-column gap-2">
+        ${certifications.map((c, i) => `
+          <div class="cert-item ${i < certifications.length - 1 ? "pb-2" : ""}">
+            <div class="cert-name">${c.name}</div>
+            <div class="cert-issuer">${c.issuer}</div>
+          </div>
+        `).join("")}
+      </div>
+    </div>`;
+}
+
 
 /* ══════════════════════════════════
    CISCO BADGES
@@ -168,7 +168,7 @@ function renderBadges() {
   container.innerHTML = `
     <div class="card portfolio-card" id="badges">
       <div class="card-header portfolio-card-header">
-        <i class="fa-solid fa-shield-halved card-icon me-2"></i>Cisco Badges
+        <i class="fa-solid fa-shield-halved card-icon me-2"></i> Badges
       </div>
       <div class="card-body p-0">
         ${badges.map((b, i) => `
@@ -193,7 +193,7 @@ function renderBadges() {
 document.addEventListener("DOMContentLoaded", () => {
   renderProjects();
   renderAchievements();
-  renderCertifications();
   renderTechnologies();
+  renderCertifications();
   renderBadges();
 });
