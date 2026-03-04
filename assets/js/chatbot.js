@@ -209,25 +209,19 @@ If asked about things unrelated to Floyd or his portfolio, politely redirect the
     showTyping();
 
     try {
-      const OR_KEY = "i have a key"; // ← paste your new OpenRouter key here
-
       const messages = [{ role: "system", content: SYSTEM_PROMPT }]
         .concat(conversationHistory);
 
-      const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      // Auto-detect local vs production — API key is safe on Vercel
+      const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+      const API_URL = isLocal
+        ? "http://localhost:3000/api/chat"
+        : "https://portfolio-three-pi-kmcywc10cn.vercel.app/api/chat";
+
+      const response = await fetch(API_URL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": "Bearer " + OR_KEY,
-          "HTTP-Referer": window.location.origin,
-          "X-Title": "Floyd Portfolio Chatbot",
-        },
-        body: JSON.stringify({
-          model: "stepfun/step-3.5-flash:free",
-          messages: messages,
-          max_tokens: 400,
-          temperature: 0.7,
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: messages }),
       });
 
       const data = await response.json();
