@@ -29,81 +29,83 @@
                 </div>
             </div>
 
-            <div class="d-flex align-items-center gap-2">
+        <div class="d-flex align-items-center gap-2">
 
-                <!-- Resume Dropdown -->
-                <div class="dropdown">
-                    <button class="btn resume-btn dropdown-toggle d-flex align-items-center gap-2"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-file-lines"></i>
-                        <span class="d-none d-sm-inline">Resume</span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end resume-menu">
-                        <li>
-                            <a class="dropdown-item resume-option d-flex align-items-center gap-2"
-                                href="./assets/Resume.pdf" target="_blank">
-                                <i class="fa-solid fa-eye resume-option-icon"></i>
-                                <div>
-                                    <div class="resume-option-label">View Resume</div>
-                                    <div class="resume-option-sub">Opens in new tab</div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item resume-option d-flex align-items-center gap-2"
-                                href="./assets/Resume.pdf" download>
-                                <i class="fa-solid fa-download resume-option-icon"></i>
-                                <div>
-                                    <div class="resume-option-label">Download PDF</div>
-                                    <div class="resume-option-sub">Save to your device</div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Resume Dropdown -->
+    <div class="dropdown">
+        <button class="btn resume-btn dropdown-toggle d-flex align-items-center gap-2"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-file-lines"></i>
+            <span class="d-none d-sm-inline">Resume</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end resume-menu">
+            <li>
+                <a class="dropdown-item resume-option d-flex align-items-center gap-2"
+                    href="./assets/Resume.pdf" target="_blank">
+                    <i class="fa-solid fa-eye resume-option-icon"></i>
+                    <div>
+                        <div class="resume-option-label">View Resume</div>
+                        <div class="resume-option-sub">Opens in new tab</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item resume-option d-flex align-items-center gap-2"
+                    href="./assets/Resume.pdf" download>
+                    <i class="fa-solid fa-download resume-option-icon"></i>
+                    <div>
+                        <div class="resume-option-label">Download PDF</div>
+                        <div class="resume-option-sub">Save to your device</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
 
-                <!-- Theme Dropdown -->
-                <div class="dropdown" id="theme-dropdown-wrapper">
-                    <button class="btn theme-btn dropdown-toggle d-flex align-items-center gap-2"
-                        id="theme-btn" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                        <i id="theme-icon" class="fa-solid fa-desktop"></i>
-                        <span id="theme-label">SYSTEM</span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end theme-menu" id="theme-menu">
-                        <li>
-                            <button class="dropdown-item theme-option d-flex align-items-center gap-2" data-value="light">
-                                <i class="fa-solid fa-sun theme-option-icon"></i>
-                                <div class="flex-grow-1">
-                                    <div class="theme-option-label">Light</div>
-                                    <div class="theme-option-sub">Light mode</div>
-                                </div>
-                                <i class="fa-solid fa-check theme-check"></i>
-                            </button>
-                        </li>
-                        <li>
-                            <button class="dropdown-item theme-option d-flex align-items-center gap-2" data-value="dark">
-                                <i class="fa-solid fa-moon theme-option-icon"></i>
-                                <div class="flex-grow-1">
-                                    <div class="theme-option-label">Dark</div>
-                                    <div class="theme-option-sub">Dark mode</div>
-                                </div>
-                                <i class="fa-solid fa-check theme-check"></i>
-                            </button>
-                        </li>
-                        <li>
-                            <button class="dropdown-item theme-option d-flex align-items-center gap-2" data-value="system">
-                                <i class="fa-solid fa-desktop theme-option-icon"></i>
-                                <div class="flex-grow-1">
-                                    <div class="theme-option-label">System</div>
-                                    <div class="theme-option-sub">Follow system</div>
-                                </div>
-                                <i class="fa-solid fa-check theme-check"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Theme Dropdown -->
+    <div class="dropdown" id="theme-dropdown-wrapper">
+        <button class="btn theme-btn d-flex align-items-center gap-2"
+            id="theme-btn" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+            <i id="theme-icon" class="fa-solid fa-desktop"></i>
+            <span id="theme-label" class="d-none d-sm-inline">SYSTEM</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end theme-menu" id="theme-menu">
+            <li>
+                <button class="dropdown-item theme-option d-flex align-items-center gap-2" data-value="light">
+                    <i class="fa-solid fa-sun theme-option-icon"></i>
+                    <div class="flex-grow-1">
+                        <div class="theme-option-label">Light</div>
+                        <div class="theme-option-sub">Light mode</div>
+                    </div>
+                    <i class="fa-solid fa-check theme-check"></i>
+                </button>
+            </li>
+            <li>
+                <button class="dropdown-item theme-option d-flex align-items-center gap-2" data-value="dark">
+                    <i class="fa-solid fa-moon theme-option-icon"></i>
+                    <div class="flex-grow-1">
+                        <div class="theme-option-label">Dark</div>
+                        <div class="theme-option-sub">Dark mode</div>
+                    </div>
+                    <i class="fa-solid fa-check theme-check"></i>
+                </button>
+            </li>
+            <li>
+                <button class="dropdown-item theme-option d-flex align-items-center gap-2" data-value="system">
+                    <i class="fa-solid fa-desktop theme-option-icon"></i>
+                    <div class="flex-grow-1">
+                        <div class="theme-option-label">System</div>
+                        <div class="theme-option-sub">Follow system</div>
+                    </div>
+                    <i class="fa-solid fa-check theme-check"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
 
-            </div>
+</div>
+
+
         </div><!-- /topbar -->
 
         <div class="row g-3">

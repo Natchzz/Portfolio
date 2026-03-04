@@ -1227,6 +1227,8 @@ main.container { position: relative; z-index: 1; }
   flex-shrink: 0;
 }
 
+
+
 /* Mobile */
 @media (max-width: 480px) {
   .chat-window {
@@ -1238,5 +1240,17 @@ main.container { position: relative; z-index: 1; }
   .chat-fab {
     right: 20px;
     bottom: 20px;
+  }
+}
+
+/* Mobile topbar buttons — icon only */
+@media (max-width: 575px) {
+  .resume-btn,
+  .theme-btn {
+    padding: 0.45rem 0.65rem;
+  }
+  .theme-btn::after,
+  .resume-btn::after {
+    display: none !important;
   }
 }
