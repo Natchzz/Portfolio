@@ -146,7 +146,7 @@ function renderCertifications() {
       <div class="card-header portfolio-card-header">
         <i class="fa-solid fa-scroll card-icon me-2"></i>Certifications
       </div>
-      <div class="card-body p-0">
+      <div class="card-body d-flex flex-column p-2">
         ${certifications.map((c, i) => `
           <a href="${c.link || '#'}" target="_blank" rel="noopener noreferrer"
              class="cert-item ${i === certifications.length - 1 ? "cert-item-last" : ""}">
@@ -177,9 +177,9 @@ function renderBadges() {
   container.innerHTML = `
     <div class="card portfolio-card" id="badges">
       <div class="card-header portfolio-card-header">
-        <i class="fa-solid fa-scroll card-icon me-2"></i>Certifications
+     <i class="fa-solid fa-shield-halved card-icon me-2"></i> Badges
       </div>
-      <div class="card-body p-0">
+      <div class="card-body d-flex flex-column p-2">
         ${badges.map((b, i) => `
             <div class="cert-item ${i === badges.length - 1 ? "cert-item-last" : ""}">  
                 <div class="cert-image">${b.image}</div>
@@ -187,8 +187,8 @@ function renderBadges() {
                 <div class="cert-name">${b.name}</div>
                 <div class="cert-issuer">
                 <span class="cert-issuer-pill">${b.issuer}</span> ${b.date}
-                </div>
-                </div>
+              </div>
+            </div>
             </div>
         `).join("")}
       </div>
