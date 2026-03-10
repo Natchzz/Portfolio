@@ -146,21 +146,30 @@ function renderCertifications() {
       <div class="card-header portfolio-card-header">
         <i class="fa-solid fa-scroll card-icon me-2"></i>Certifications
       </div>
-      <div class="card-body d-flex flex-column gap-2">
+      <div class="card-body p-0">
         ${certifications.map((c, i) => `
-          <div class="cert-item ${i < certifications.length - 1 ? "pb-2" : ""}">
-            <div class="cert-name">${c.name}</div>
-            <div class="cert-issuer">${c.issuer}</div>
-          </div>
+          <a href="${c.link || '#'}" target="_blank" rel="noopener noreferrer"
+             class="cert-item ${i === certifications.length - 1 ? "cert-item-last" : ""}">
+            <div class="cert-image">${c.image}</div>
+            <div class="cert-info">
+              <div class="cert-name">${c.name}</div>
+              <div class="cert-issuer">
+                <span class="cert-issuer-pill">${c.issuer}</span> ${c.date}
+              </div>
+            </div>
+          </a>
         `).join("")}
       </div>
     </div>`;
 }
 
 
+
+
 /* ══════════════════════════════════
    CISCO BADGES
 ══════════════════════════════════ */
+
 function renderBadges() {
   const container = document.getElementById("slot-badges");
   if (!container) return;
@@ -168,23 +177,49 @@ function renderBadges() {
   container.innerHTML = `
     <div class="card portfolio-card" id="badges">
       <div class="card-header portfolio-card-header">
-        <i class="fa-solid fa-shield-halved card-icon me-2"></i> Badges
+        <i class="fa-solid fa-scroll card-icon me-2"></i>Certifications
       </div>
       <div class="card-body p-0">
         ${badges.map((b, i) => `
-          <div class="badge-item ${i === badges.length - 1 ? "badge-item-last" : ""}">
-            <div class="badge-icon-wrap"><i class="${b.icon} badge-cisco-icon"></i></div>
-            <div class="badge-info">
-              <div class="badge-name">${b.name}</div>
-              <div class="badge-meta">
-                <span class="badge-cisco-pill">Cisco</span> ${b.date}
-              </div>
+            <div class="cert-item ${i === badges.length - 1 ? "cert-item-last" : ""}">  
+                <div class="cert-image">${b.image}</div>
+                <div class="cert-info">
+                <div class="cert-name">${b.name}</div>
+                <div class="cert-issuer">
+                <span class="cert-issuer-pill">${b.issuer}</span> ${b.date}
+                </div>
+                </div>
             </div>
-          </div>
         `).join("")}
       </div>
     </div>`;
 }
+
+
+// function renderBadges() {
+//   const container = document.getElementById("slot-badges");
+//   if (!container) return;
+
+//   container.innerHTML = `
+//     <div class="card portfolio-card" id="badges">
+//       <div class="card-header portfolio-card-header">
+//         <i class="fa-solid fa-shield-halved card-icon me-2"></i> Badges
+//       </div>
+//       <div class="card-body p-0">
+//         ${badges.map((b, i) => `
+//           <div class="badge-item ${i === badges.length - 1 ? "badge-item-last" : ""}">
+//             <div class="badge-icon-wrap"><i class="${b.icon} badge-cisco-icon"></i></div>
+//             <div class="badge-info">
+//               <div class="badge-name">${b.name}</div>
+//               <div class="badge-meta">
+//                 <span class="badge-cisco-pill">Cisco</span> ${b.date}
+//               </div>
+//             </div>
+//           </div>
+//         `).join("")}
+//       </div>
+//     </div>`;
+// }
 
 
 /* ══════════════════════════════════

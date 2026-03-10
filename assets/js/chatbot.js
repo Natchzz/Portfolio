@@ -33,6 +33,10 @@ Experience:
 - Intern | IT Support at Zeldan Nordic Language Review Center, Baguio City (June-July 2024)
   Skills: Networking, Windows, Laravel, MySQL, PHP, Bootstrap
 
+
+Certifications:
+- Microsoft Certified: Azure Fundamentals AZ-900 (2026)
+
 Cisco Badges:
 - Network Technician Career Path (Feb 2026)
 - Network Support and Security (Feb 2026)
@@ -50,6 +54,7 @@ If asked about things unrelated to Floyd or his portfolio, politely redirect the
     "Tell me about his projects",
     "His work experience?",
     "How to contact Floyd?",
+    "His certifications?",
     "His Cisco badges?",
   ];
 

@@ -134,7 +134,13 @@ const certifications = [
 //   { name: "PD 907 Civil Service Eligibility",    issuer: "Philippine Civil Service Commission · 2024" },
 //   { name: "AWS Cloud Practitioner Essentials",   issuer: "Amazon Web Services · 2023" },
 //   { name: "Responsive Web Design",               issuer: "freeCodeCamp · 2022" },
-
+        {
+            image: "<img src='./assets/img/certification/az-900.svg' alt='Azure Fundamentals Badge' class='cert-badge'>", 
+            name: "Microsoft Certified: Azure Fundamentals", 
+            issuer: "Microsoft",
+            date: "March 2024",
+            link: "https://learn.microsoft.com/api/credentials/share/en-us/floydancheta-1977/34ED9DE384A98D5A?sharingId=C256A91F3042F4DE"
+        },
 
 
 //   ── Add a new certification here ────────────────────────────────
@@ -146,14 +152,49 @@ const certifications = [
    CISCO BADGES
 ══════════════════════════════════ */
 const badges = [
-  { icon: "fa-solid fa-route",                name: "Network Technician Career Path",                  date: "Feb 16, 2026" },
-  { icon: "fa-solid fa-network-wired",        name: "Network Support and Security",                    date: "Feb 16, 2026" },
-  { icon: "fa-solid fa-sitemap",              name: "Network Addressing and Basic Troubleshooting",    date: "Feb 2, 2026"  },
-  { icon: "fa-solid fa-lock",                 name: "Endpoint Security",                               date: "Dec 17, 2025" },
-  { icon: "fa-solid fa-triangle-exclamation", name: "Cyber Threat Management",                         date: "Nov 1, 2025"  },
-  { icon: "fa-solid fa-server",               name: "Networking Devices and Initial Configuration",    date: "Nov 29, 2025" },
-  { icon: "fa-solid fa-wifi",                 name: "Networking Basics",                               date: "Nov 14, 2025" },
-  { icon: "fa-solid fa-user-shield",          name: "Introduction to Cybersecurity",                   date: "Feb 16, 2024" },
+  { 
+    image: "<img src='./assets/img/badges/network-technician-career-path.png' alt='Network Technician Badge'  class='cert-badge'>",               
+    name: "Network Technician Career Path",                  
+    issuer: "Cisco",
+    date: "Feb 16, 2026" },
+  { 
+    image: "<img src='./assets/img/badges/network-support-and-security.png' alt='Network Support and Security Badge' class='cert-badge'>",        
+    name: "Network Support and Security",                    
+    issuer: "Cisco", date: "Feb 16, 2026" },
+
+  { 
+    image: "<img src='./assets/img/badges/network-addressing-and-basic-troubleshooting.png' alt='Network Addressing and Basic Troubleshooting Badge' class='cert-badge'>",              
+    name: "Network Addressing and Basic Troubleshooting",    
+    issuer: "Cisco", 
+    date: "Feb 2, 2026"  },
+
+  { 
+    image: "<img src='./assets/img/badges/endpoint-security.png' alt='Endpoint Security Badge' class='cert-badge'>", 
+    name: "Endpoint Security",                              
+    issuer: "Cisco",                   
+    date: "Dec 17, 2025"  },
+  
+  { 
+    image: "<img src='./assets/img/badges/cyber-threat-management.png' alt='Cyber Threat Management Badge' class='cert-badge'>", 
+    name: "Cyber Threat Management",      
+    issuer: "Cisco",                   
+    date: "Nov 1, 2025"  },
+  { 
+    image: "<img src='./assets/img/badges/networking-devices-and-initial-configuration.png' alt='Networking Devices and Initial Configuration Badge' class='cert-badge'>",               
+    name: "Networking Devices and Initial Configuration",    
+    issuer: "Cisco",
+    date: "Nov 29, 2025" },
+  { 
+    image: "<img src='./assets/img/badges/networking-basics.png' alt='Networking Basics Badge' class='cert-badge'>",                 
+    name: "Networking Basics",                               
+    issuer: "Cisco", 
+    date: "Nov 14, 2025" },
+  { 
+    image: "<img src='./assets/img/badges/introduction-to-cybersecurity.png' alt='Introduction to Cybersecurity Badge' class='cert-badge'>",          
+    name: "Introduction to Cybersecurity",                   
+    issuer: "Cisco", 
+    date: "Feb 16, 2024" 
+},
   // ── Add a new badge here ─────────────────────────────────────────
   // { icon: "fa-solid fa-shield-halved", name: "Badge Name", date: "Mon DD, YYYY" },
 ];
