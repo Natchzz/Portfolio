@@ -97,30 +97,29 @@ const achievements = [
    TECHNOLOGIES
 ══════════════════════════════════ */
 const technologies = [
-
   {
-    label: "Networking & Protocols",
-    tags:  ["Routing & Switching", "Network Config & Troubleshooting", "ACLs", "STP", "EIGRP", "OSPF"],
-  },
-  {
-    label: "Monitoring & Admin Tools",
-    tags:  ["Cacti", "Grafana"],
+    label: "Cloud & Systems",
+    tags: ["Microsoft Azure", "Virtual Machines", "Cloud Concepts (IaaS, PaaS, SaaS)"],
   },
   {
     label: "Operating Systems & Virtualization",
-    tags:  ["Linux (Ubuntu, CentOS, Kali)", "Windows Server", "VMware", "VirtualBox"],
+    tags: ["Linux CLI & Bash Scripting", "Windows", "VMware", "VirtualBox"],
   },
   {
-    label: "Remote & Network Tools",
-    tags:  ["PuTTY", "Wireshark", "VNC", "TeamViewer", "Raspberry Pi"],
+    label: "Networking & Security",
+    tags: ["TCP/IP", "Subnetting", "VLANs", "VPNs", "ACLs", "OSPF", "Network Troubleshooting", "Wireshark"],
   },
   {
-    label: "Embedded & Scripting",
-    tags:  ["Python", "Bash", "C/C++", "Arduino"],
+    label: "Programming & Web Development",
+    tags: ["Python", "C++", "Java", "HTML", "CSS", "PHP", "Laravel", "JavaScript"],
   },
   {
-    label: "Web Development",
-    tags:  ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "CodeIgniter", "MySQL"],
+    label: "Monitoring & Remote Management",
+    tags: ["PuTTY", "VNC", "TeamViewer", "AnyDesk", "RDP"],
+  },
+  {
+    label: "Other Tools",
+    tags: ["GitHub", "Git Bash"],
   },
   // ── Add a new group here ─────────────────────────────────────────
   // { label: "Group Name", tags: ["Tag1", "Tag2"] },
