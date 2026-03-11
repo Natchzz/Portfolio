@@ -17,12 +17,12 @@ Here's what you know about Floyd:
 - Facebook: facebook.com/floydmark.ancheta
 
 Skills & Technologies:
-- Networking: Routing & Switching, ACLs, STP, EIGRP, OSPF, Network Troubleshooting
-- Monitoring: Cacti, Grafana
-- OS & Virtualization: Linux (Ubuntu, CentOS, Kali), Windows Server, VMware, VirtualBox
-- Remote/Network Tools: PuTTY, Wireshark, VNC, TeamViewer, Raspberry Pi
-- Embedded & Scripting: Python, Bash, C/C++, Arduino
-- Web Dev: HTML, CSS, JavaScript, Bootstrap, PHP, CodeIgniter, MySQL
+- Cloud & Systems: Microsoft Azure, Virtual Machines, Cloud Concepts (IaaS, PaaS, SaaS)
+- Operating Systems & Virtualization: Linux CLI & Bash Scripting, Windows, VMware, VirtualBox
+- Networking & Security: TCP/IP, Subnetting, VLANs, VPNs, ACLs, OSPF, Network Troubleshooting, Wireshark
+- Programming & Web Development: Python, C++, Java, HTML, CSS, PHP, Laravel, JavaScript
+- Monitoring & Remote Management: PuTTY, VNC, TeamViewer, AnyDesk, RDP
+- Other Tools: GitHub, Git Bash
 
 Projects:
 1. RJE Resort Management System (2025, Capstone) — Web-based resort booking system using PHP, MySQL, CodeIgniter, Bootstrap. Handles reservations, guest check-in/out, real-time availability, and reporting.
