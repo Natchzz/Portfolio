@@ -33,19 +33,8 @@ Experience:
 - Intern | IT Support at Zeldan Nordic Language Review Center, Baguio City (June-July 2024)
   Skills: Networking, Windows, Laravel, MySQL, PHP, Bootstrap
 
-
 Certifications:
 - Microsoft Certified: Azure Fundamentals AZ-900 (2026)
-
-Cisco Badges:
-- Network Technician Career Path (Feb 2026)
-- Network Support and Security (Feb 2026)
-- Network Addressing and Basic Troubleshooting (Feb 2026)
-- Endpoint Security (Dec 2025)
-- Cyber Threat Management (Nov 2025)
-- Networking Devices and Initial Configuration (Nov 2025)
-- Networking Basics (Nov 2025)
-- Introduction to Cybersecurity (Feb 2024)
 
 If asked about things unrelated to Floyd or his portfolio, politely redirect the conversation. Always be encouraging and professional.`;
 
@@ -55,7 +44,6 @@ If asked about things unrelated to Floyd or his portfolio, politely redirect the
     "His work experience?",
     "How to contact Floyd?",
     "His certifications?",
-    "His Cisco badges?",
   ];
 
   let conversationHistory = [];
@@ -217,7 +205,6 @@ If asked about things unrelated to Floyd or his portfolio, politely redirect the
       const messages = [{ role: "system", content: SYSTEM_PROMPT }]
         .concat(conversationHistory);
 
-      // Auto-detect local vs production — API key is safe on Vercel
       const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
       const API_URL = isLocal
         ? "http://localhost:3000/api/chat"
@@ -234,10 +221,8 @@ If asked about things unrelated to Floyd or his portfolio, politely redirect the
       let reply = "Sorry, I couldn't get a response right now. Please try again!";
       if (data && data.choices && data.choices[0]) {
         const msg = data.choices[0].message;
-        // Use only content, never reasoning (prevents StepFun thinking leak)
         let txt = msg && msg.content;
         if (txt) {
-          // Strip any reasoning block that starts with common thinking patterns
           txt = txt.replace(/^[\s\S]*?(?=(?:Floyd|Hi|Sure|Of course|Here|Based|I'd|I can|Let me provide|The|According|As Floyd))/i, "").trim();
           reply = txt || msg.content.trim();
         } else {
@@ -268,7 +253,7 @@ If asked about things unrelated to Floyd or his portfolio, politely redirect the
       return ["Tell me about his projects", "His certifications?", "Work experience?"];
     if (q.includes("contact") || q.includes("email") || q.includes("hire"))
       return ["His GitHub?", "His LinkedIn?", "Where is Floyd located?"];
-    if (q.includes("cert") || q.includes("cisco") || q.includes("badge"))
+    if (q.includes("cert") || q.includes("azure") || q.includes("microsoft"))
       return ["His networking skills?", "Tell me about his projects", "His education?"];
     if (q.includes("educat") || q.includes("school") || q.includes("degree"))
       return ["His skills?", "Tell me about his projects", "His work experience?"];
